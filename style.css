@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(218, 22%, 67%);
+} 
+main{
+    height: 29rem;
+    width: 40rem;
+    border: .1px solid rgba(204, 204, 204, 0);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.content-main {
+    height: 15rem;
+    background-color: #fff;
+    padding: 2rem 2rem;
+}
+.content-main h1 {
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 1rem ;
+}
+
+.content-main h2 {
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 1rem ;
+}
+.content-main p {
+    color: hsl(218, 22%, 67%);
+}
+
+footer {
+    height: 17rem;
+    display: flex;
+}
+
+.footer-left {
+    background-color: #21aba5;
+    width: 20rem;
+    padding: 2rem 2rem;
+}
+.money {
+    display: flex;
+}
+
+.footer-left h2, h3, p {
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.money h4 {
+    color: hsla(0, 0%, 100%, 0.473);
+    padding: 1rem 1rem;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    border: 0;
+}
+
+footer button{
+    height: 3rem;
+    width: 13rem;
+    border-radius: 0.5rem;
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    font-size: 15px;
+    box-shadow: 5px 5px hsla(210, 4%, 31%, 0.432);
+}
+
+.footer-right {
+    background:  hsl(179, 62%, 43%);
+    width: 20rem;
+    padding: 3rem 2rem;
+}
+
+footer h2 {
+    color: #fff;
+}
+.footer-right p {
+    padding-right: 7rem;
+    color: hsla(217, 45%, 85%, 0.685);
+}
+
+@media only screen and (max-width: 400px){
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 17em;
+        height: 43rem;
+    } 
+    footer{
+        height: 17rem;
+        display: contents;
+    }
+    .content-main {
+        padding: .9rem;
+        font-size: smaller;
+    }
+    .content-main > p:nth-child(3) {
+        padding: .3rem 0;
+    }
+    .content-main > h2:nth-child(2) {
+        padding: .5rem 0;
+    }
+    .footer-left {
+        width: 17rem;
+        font-size: small;
+        height: 13rem;
+    }
+    .footer-right {
+        width: 17rem;
+        font-size: 14px;
+        padding: 3rem 1rem;
+    }
+       
+        
+       
+}
