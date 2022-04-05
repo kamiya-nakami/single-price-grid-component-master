@@ -12,7 +12,7 @@ body {
     background-color: hsl(218, 22%, 67%);
 } 
 main{
-    height: 29rem;
+    height: 32rem;
     width: 40rem;
     border: .1px solid rgba(204, 204, 204, 0);
     border-radius: 1rem;
